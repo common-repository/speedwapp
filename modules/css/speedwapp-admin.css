@@ -1,0 +1,148 @@
+
+.fullscreen #screen-meta,
+.fullscreen #screen-meta-links,
+.fullscreen #wp-toolbar,
+.fullscreen #wpfooter,
+.fullscreen .page-title-action,
+.fullscreen .postbox-container>*,
+.fullscreen .update-nag,
+.fullscreen .wrap>h1,
+.fullscreen div.error,
+.fullscreen div.notice,
+.fullscreen div.updated {
+    display: none;
+}
+
+.fullscreen #speedwapp-editor-container {
+    margin-top: 0px;
+    position: static;
+}
+
+.fullscreen #poststuff #post-body.columns-2,
+.fullscreen #post-body-content,
+.fullscreen #wpcontent,
+.fullscreen #wpfooter,
+.fullscreen #wpbody-content,
+.fullscreen .wrap {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide everything except the form */ 
+.fullscreen .wrap > div {
+    display: none!important;
+}
+
+.fullscreen #wpbody-content {
+/*    position: absolute; */
+}
+
+.fullscreen #post-body-content {
+    float: none;
+    clear: none;
+}
+
+.fullscreen .wp-editor-container {
+    border: none;
+}
+
+.fullscreen #wpadminbar,
+.fullscreen #titlediv,
+.fullscreen #speedwapp-switch-editor-button {
+    display: none;
+}
+
+.fullscreen #poststuff {
+    padding: 0;
+}
+
+#speedwapp-editor-container {
+    margin-top: 20px;
+    position: relative;
+}
+
+#speedwapp-editor-container .sw-editor-buttons {
+    top: 2px;
+    right: 2px;
+    position: absolute;
+    z-index: 56;
+}
+
+.speedwapp-editor {
+    width: 100%;
+    min-height: 500px;
+}
+
+body.speedwapp-editor-active #postdivrich,
+body.speedwapp-editor-active .block-editor-block-list__layout,
+body.speedwapp-editor-active .editor-block-list__layout,
+body.speedwapp-editor-active #speedwapp-switch-editor-button > .edit-with-speedwapp
+{
+    display: none;
+}
+
+body.speedwapp-editor-inactive #speedwapp-editor-container,
+body.speedwapp-editor-inactive #speedwapp-switch-editor-button > .speedwapp-back-to-wordpress-editor
+{
+ display: none;
+}
+
+body.speedwapp-editor-active #speedwapp-switch-editor-button {
+    color: #007cba;
+    background: transparent;
+}
+
+body.speedwapp-editor-active #speedwapp-editor-container {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+body.speedwapp-editor-active #speedwapp-editor-container > a {
+    display: flex;
+    height: 100%;
+    border: 1px solid #e3e3e3;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e3e3;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+
+#speedwapp-switch-editor-button {
+    display: inline-flex;
+    -webkit-appearance: none;
+    transition: box-shadow .1s linear;
+    height: 36px;
+    align-items: center;
+    border-radius: 2px;
+    font-size: 13px;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    margin: 0 15px;
+    white-space: nowrap;
+    padding: 6px;
+    outline: 1px dotted transparent;
+}
+
+/* Classic editor */
+#post-body-content #speedwapp-switch-editor-button {
+    margin: 15px 0 0 0!important;
+    border: 1px solid #007cba!important;
+}
+
+#speedwapp-editor-container div.button {
+    white-space: nowrap;
+    padding: 0 12px;
+    height: 40px;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+body.speedwapp-editor-active #speedwapp-switch-editor-button:hover {
+    color: #006ba1;
+    box-shadow: inset 0 0 0 1px #006ba1;
+}
